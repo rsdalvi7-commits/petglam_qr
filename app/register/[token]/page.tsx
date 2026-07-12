@@ -33,10 +33,10 @@ export default function RegisterPage({ params }: { params: Promise<{ token: stri
       <h1 className="text-2xl font-bold">Register your PetGlam collar</h1>
 
       <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-4">
-        <input name="owner_phone" placeholder="Owner phone number" type="tel" required
+        <input name="owner_phone" placeholder="Phone number" type="tel" required
           inputMode="numeric" maxLength={10} pattern="[0-9]*"
           className="border border-gray-200 rounded-xl px-4 py-3 text-sm w-full" />
-        <input name="owner_phone2" placeholder="Secondary contact" type="tel" required
+        <input name="owner_phone2" placeholder="Alternate phone number" type="tel" required
           inputMode="numeric" maxLength={10} pattern="[0-9]*"
           className="border border-gray-200 rounded-xl px-4 py-3 text-sm w-full" />
         <textarea name="address" placeholder="Address" required rows={3} maxLength={300}
