@@ -38,17 +38,17 @@ export default async function PetPage({ params }: { params: Promise<{ token: str
         )}
 
         <div className="border border-gray-200 rounded-xl p-4">
-          <p className="text-sm text-gray-500">Owner contact</p>
-          <a href={`tel:${pet.owner_phone}`} className="text-lg font-semibold text-green-600 hover:underline">
-            {pet.owner_phone}
+          <p className="text-sm text-gray-500">Owner phone number</p>
+          <a href={`tel:${pet.owner_phone}`} className="text-lg font-semibold text-sky-600 hover:text-sky-500 hover:underline">
+            📞 {pet.owner_phone}
           </a>
         </div>
 
         {pet.owner_phone2 && (
           <div className="border border-gray-200 rounded-xl p-4">
-            <p className="text-sm text-gray-500">Secondary contact</p>
-            <a href={`tel:${pet.owner_phone2}`} className="text-lg font-semibold text-gray-700 hover:underline">
-              {pet.owner_phone2}
+            <p className="text-sm text-gray-500">Alternate phone number</p>
+            <a href={`tel:${pet.owner_phone2}`} className="text-lg font-semibold text-sky-600 hover:text-sky-500 hover:underline">
+              📞 {pet.owner_phone2}
             </a>
           </div>
         )}
